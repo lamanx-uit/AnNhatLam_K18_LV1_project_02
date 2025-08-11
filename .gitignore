@@ -1,3 +1,9 @@
-/.vscode/
-/.gitignore/
-/.rds-connect.ipynb/
+#IDE
+.vscode/
+
+# code-base
+src/__pycache__/
+src/dev/rds-connect.ipynb
+*.pyc
+CLAUDE.md
+src/dev/getdata.ipynb
