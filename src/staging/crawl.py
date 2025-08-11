@@ -5,8 +5,8 @@ from requests.adapters import HTTPAdapter
 import random
 import logging
 from pathlib import Path
-from circuit import fallback
 from dlq import put_CDLQ_item
+import requests
 from circuitbreaker import circuit
 
 # Move to yaml (gotta learn)
@@ -65,7 +65,7 @@ def read_data():
     invalid_id = [pid for pid in product_ids if pid not in valid_ids_set]
     if len(invalid_id) > 0:
         with open (FILES['abnormal-id'], 'w') as f:
-            f.write('\n'.join(map(str, invalid_id)))
+            f.write('\n'.join(map(str, invalid_id)) + '\n')
         logging.info(f"Invalid IDs written to {FILES['abnormal-id']}") 
     product_ids = valid_ids
     return product_ids
@@ -88,12 +88,6 @@ def setup_session():
         'Origin': 'https://tiki.vn'
     }
     return session, headers
-
-@circuit(name='get_product_data', 
-         fallback_function=fallback, 
-         failure_threshold=5, 
-         recovery_timeout=60, 
-         expected_exception=(req.Timeout, req.ConnectionError, req.RequestException))
 
 def get_product_data(product_id):
     max_retries = 3
@@ -133,7 +127,7 @@ def get_product_data(product_id):
             elif response.status_code in [429, 500, 502, 503, 504]:
                 logging.warning(f"Rate limit exceeded or Internal server error for product ID {product_id}, retrying...")
                 if attempt < max_retries - 1:
-                    time.sleep(random.uniform(1, 3) * (attempt + 1))  # Exponential backoff
+                    time.sleep(random.uniform(1, 3) * (attempt + 1))  
                 else: 
                     last_error = f"{response.status_code} after {max_retries} attempts"
                 raise req.RequestException()
@@ -155,19 +149,18 @@ def get_product_data(product_id):
         # Other errors
         except req.RequestException as e:
             error_reason = str(e)
-            logging.error(f"Request error for product ID {product_id}: {error_reason}")
+            logging.error(f"Request error for product ID {product_id}: {error_reason}, retrying...")
             if attempt < max_retries - 1:
                 time.sleep(random.uniform(1, 3) * (attempt + 1))
             else:
                 last_error = f"{error_reason} error after {max_retries} attempts"
 
     # If all retries fail, to DLQ
-    logging.error(f"Failed to fetch data for product ID {product_id} after {max_retries} attempts")
-    put_CDLQ_item(product_id)  # Put into DLQ
+    logging.error(f"Failed to fetch data for product ID {product_id} after {max_retries} attempts, {last_error}")
     # Log the error to DLQ logs
+    put_CDLQ_item(product_id)
     with open(FILES['abnormal-id'], 'a') as f:
         f.write(f"{product_id}, {last_error}\n")     
-    return None
 
 """TODO:
 - The program can't ensure that the data outcome is the same all the times -> Veracity is really really bad (PASSED)

@@ -1,5 +1,3 @@
-from circuitbreaker import circuit
-from dlq import CDLQ, put_CDLQ_item, CDLQ_processing
 import logging
 import json
 from datetime import datetime
@@ -18,24 +16,23 @@ FILES = {
     'output': BASE_DIR / 'tests' / 'output',
 
     # 'tmp': BASE_DIR / 'data' / 'output',
-    'tmp': BASE_DIR / 'tests' / 'tmp'
+    'tmp': BASE_DIR / 'tests' / 'output' / 'tmp'
 }
 
-def fallback(product_id, selected_data, batch_number):
+def fallback(product_id, data, batch_number):
+    from dlq import CDLQ, put_CDLQ_item
     # System failing
-    logging.warning(f"Circuit OPEN - system failing")
+    logging.critical(f"Circuit OPEN - system failing")
     
     # Saves the current work to tmp
     # 1. Successful responds go to tmp
     tmp_file = FILES['tmp'] / f"success_batch_{batch_number}.json"
     with open(tmp_file, 'w', encoding='utf-8', errors='ignore') as f:
-        json.dump(selected_data, f, ensure_ascii=False, indent=4)
-    logging.info(f"Saved successful batch {len(selected_data)} to {tmp_file}")
+        json.dump(data, f, ensure_ascii=False, indent=4)
+    logging.info(f"Saved successful batch {len(data)} to {tmp_file}")
 
     # 2. All unprocessed batch items to CDLQ
     put_CDLQ_item(product_id)
-    logging.info(f"Queued items to CDLQ for retry")
-    # Process in-processing batch/items
-    
-    pass
+    logging.info(f"Queued {1000 - len(data)} items to CDLQ for retry")
+    return None
   
