@@ -1,38 +1,41 @@
+import pybreaker
 import logging
-import json
-from datetime import datetime
+import sys
+import time
 
-from pathlib import Path
-BASE_DIR = Path(__file__).resolve().parent.parent.parent
-FILES = {
-    'products': BASE_DIR / 'data' / 'input' / 'products-0-200000.xlsx',
-    # 'logs': BASE_DIR / 'logs' / 'crawl.log',
-    'logs': BASE_DIR / 'tests' / 'logs' / 'crawl.log',
-    
-    # 'abnormal-id': BASE_DIR / 'logs' / 'DLQ.log',
-    'abnormal-id': BASE_DIR / 'tests' / 'logs' / 'DLQ.log',
-    
-    # 'output': BASE_DIR / 'data' / 'output',
-    'output': BASE_DIR / 'tests' / 'output',
+class CustomCircuitBreaker:
+      def __init__(self, failure_threshold=5, recovery_timeout=60, max_attempts=3):
+          self.max_attempts = max_attempts
+          self.attempt_count = 0
+          self.last_failure_count = 0
 
-    # 'tmp': BASE_DIR / 'data' / 'output',
-    'tmp': BASE_DIR / 'tests' / 'output' / 'tmp'
-}
+          self.breaker = pybreaker.CircuitBreaker(
+              fail_max=failure_threshold,
+              reset_timeout=recovery_timeout,
+              exclude=[KeyboardInterrupt],
+              name="API_Circuit"
+          )
 
-def fallback(product_id, data, batch_number):
-    from dlq import CDLQ, put_CDLQ_item
-    # System failing
-    logging.critical(f"Circuit OPEN - system failing")
-    
-    # Saves the current work to tmp
-    # 1. Successful responds go to tmp
-    tmp_file = FILES['tmp'] / f"success_batch_{batch_number}.json"
-    with open(tmp_file, 'w', encoding='utf-8', errors='ignore') as f:
-        json.dump(data, f, ensure_ascii=False, indent=4)
-    logging.info(f"Saved successful batch {len(data)} to {tmp_file}")
+      def call(self, func, *args, **kwargs):
+          """Execute function through circuit breaker"""
 
-    # 2. All unprocessed batch items to CDLQ
-    put_CDLQ_item(product_id)
-    logging.info(f"Queued {1000 - len(data)} items to CDLQ for retry")
-    return None
-  
+          # Check if we've hit failure threshold
+          if self.breaker.fail_counter >= self.breaker.fail_max:
+              self.attempt_count += 1
+              if self.attempt_count >= self.max_attempts:
+                  logging.critical("Max recovery attempts reached - TERMINATING PROGRAM")
+                  sys.exit(1)
+              logging.error(f"Circuit breaker open (attempt {self.attempt_count}/{self.max_attempts})")
+
+          try:
+              result = self.breaker(func)(*args, **kwargs)
+              # Reset attempt counter on success
+              if self.attempt_count > 0:
+                  logging.info("Circuit breaker recovered - resetting attempt counter")
+                  self.attempt_count = 0
+              return result
+
+          except pybreaker.CircuitBreakerError:
+              logging.error("Circuit breaker is OPEN - waiting for reset")
+              time.sleep(self.breaker.reset_timeout)
+              raise SystemExit("Circuit breaker blocked call")

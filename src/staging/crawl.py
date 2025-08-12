@@ -1,3 +1,4 @@
+import json
 import pandas as pd
 import requests as req
 import time
@@ -5,7 +6,6 @@ from requests.adapters import HTTPAdapter
 import random
 import logging
 from pathlib import Path
-from dlq import put_CDLQ_item
 import requests
 from circuitbreaker import circuit
 
@@ -130,7 +130,6 @@ def get_product_data(product_id):
                     time.sleep(random.uniform(1, 3) * (attempt + 1))  
                 else: 
                     last_error = f"{response.status_code} after {max_retries} attempts"
-                raise req.RequestException()
 
         except req.Timeout:
             logging.warning(f"Timeout error for product ID {product_id}, retrying...")
@@ -138,14 +137,16 @@ def get_product_data(product_id):
                 time.sleep(random.uniform(1, 3) * (attempt + 1))
             else:
                 last_error = f"Timeout after {max_retries} attempts"
-                
+            raise req.Timeout()
+            
         except req.ConnectionError:
             logging.warning(f"Connection error for product ID {product_id}, retrying...")
             if attempt < max_retries - 1:
                 time.sleep(random.uniform(1, 3) * (attempt + 1))
             else:
                 last_error = f"Connection error after {max_retries} attempts"
-
+            raise req.ConnectionError()
+        
         # Other errors
         except req.RequestException as e:
             error_reason = str(e)
@@ -158,9 +159,9 @@ def get_product_data(product_id):
     # If all retries fail, to DLQ
     logging.error(f"Failed to fetch data for product ID {product_id} after {max_retries} attempts, {last_error}")
     # Log the error to DLQ logs
-    put_CDLQ_item(product_id)
     with open(FILES['abnormal-id'], 'a') as f:
         f.write(f"{product_id}, {last_error}\n")     
+    return None
 
 """TODO:
 - The program can't ensure that the data outcome is the same all the times -> Veracity is really really bad (PASSED)

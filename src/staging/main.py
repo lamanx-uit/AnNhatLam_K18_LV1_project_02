@@ -1,12 +1,11 @@
 from concurrent.futures import ThreadPoolExecutor
 import json
+import os
 from crawl import read_data, get_product_data, setup_logging
 from processing import preprocessing
 from concurrent.futures import ThreadPoolExecutor
 import logging
-from dlq import CDLQ_processing
-from circuitbreaker import circuit
-import requests as req
+from checkpoint import stateMachine, save_checkpoint, load_checkpoint, clear_checkpoint
 
 # Move to yaml (gotta learn)
 from pathlib import Path
@@ -23,7 +22,9 @@ FILES = {
     'output': BASE_DIR / 'tests' / 'output',
 
     # 'tmp': BASE_DIR / 'data' / 'output',
-    'tmp': BASE_DIR / 'tests' / 'output' / 'tmp'
+    'tmp': BASE_DIR / 'tests' / 'output' / 'tmp',
+
+    'checkpoint' : BASE_DIR / 'tests' / 'checkpoints' / 'checkpoint.json'
 }
 
 def saving(data, batch_number):
@@ -35,46 +36,55 @@ def saving(data, batch_number):
         
     logging.info(f"Saved batch {batch_number} to {filename}")
 
-def fallback(product_id, data, batch_number):
-    from dlq import CDLQ, put_CDLQ_item
-    # System failing
-    logging.critical(f"Circuit OPEN - system failing")
-    
-    # Saves the current work to tmp
-    # 1. Successful responds go to tmp
-    tmp_file = FILES['tmp'] / f"success_batch_{batch_number}.json"
-    with open(tmp_file, 'w', encoding='utf-8', errors='ignore') as f:
-        json.dump(data, f, ensure_ascii=False, indent=4)
-    logging.info(f"Saved successful batch {len(data)} to {tmp_file}")
-
-    # 2. All unprocessed batch items to CDLQ
-    put_CDLQ_item(product_id)
-    logging.info(f"Queued {1000 - len(data)} items to CDLQ for retry")
-    return None
-
-@circuit(name='get_product_data_wrapper', 
-         fallback_function=fallback, 
-         failure_threshold=5, 
-         recovery_timeout=60, 
-         expected_exception=(req.Timeout, req.ConnectionError, req.RequestException))
 def get_product_data_wrapper(product_ids):
     total_products = 0
     batch_size = 1000  # Number of products per batch
     batch_total = len(product_ids)  # Total number of products to process
     
-    for batches in range(0, batch_total, batch_size):
-        batch_ids = product_ids[batches:batches + batch_size]
-        future = []  
-        data = []   
+    # Load checkpoint
+    state = stateMachine()
+    try:
+        checkpoint_data = load_checkpoint(filename=str(FILES['checkpoint']))
+        logging.info(f"checkpoint_data: {checkpoint_data}")
+        state.update_status(current_status="resume")
+        if checkpoint_data:
+            # Load config from checkpoint data
+            state.current_batch = checkpoint_data.get('current_batch', 0)
+            state.failed_id = checkpoint_data.get('failed_id', [])
+            state.completed_batch = checkpoint_data.get('completed_batch', [])
+            logging.info(f"Checkpoint loaded: {state.get_state()}")
+            # Load config for batch processing
+            start_batch = (state.current_batch * 1000) - 1000
+        else:
+            logging.info("No checkpoint found - starting fresh")
+        start_batch = 0
+    except Exception as e:
+        logging.error(f"Error loading checkpoint: {e} - starting fresh")
+        start_batch = 0
+
+    for batches in range(start_batch, batch_total, batch_size):
+        batch_ids = product_ids[batches:(batches + batch_size)]  # Slicing from checkpoint to the end of batch (1000)
+        future = []
+        data = []
+        batch_number = batches // batch_size + 1
+        
+        if batch_number in state.completed_batch:
+            logging.info(f"Batch {batch_number} already processed, skipping...")
+            continue
+
         try:
             with ThreadPoolExecutor(max_workers=20) as executor:
                 for product_id in batch_ids:
                     future.append(executor.submit(get_product_data, product_id))
-            # Collect results
             for f in future:
-                data.append(f.result())
-            # Filter out None results
+                result = f.result()
+                data.append(result)
+                state.update_status(current_status="processing")
+
+            # Filter results
             data = [d for d in data if d is not None]
+            data_failed = [d for d in data if d.get('error') is not None]
+            state.add_failed(data_failed)
             total_products += len(data)
             logging.info(f"Total products fetched in this batch: {len(data)} / {batch_size}")
             logging.info(f"Batch {batches // batch_size + 1} fetched with {len(data)} products.")
@@ -82,23 +92,38 @@ def get_product_data_wrapper(product_ids):
             # Process the result
             for item in data:
                 preprocessing(item)
+                
+            state.update_status(current_status="processed")
             
             # Process the result and save it
-            saving(data, batches // batch_size + 1)
-            logging.info(f"Batch {batches // batch_size + 1} processed and saved.")
+            saving(data, batch_number)
+            logging.info(f"Batch {batch_number} processed and saved.")
 
-        # Circuit Open:  Fallback to DLQ
-        except Exception as e:
-            logging.error(f"Error processing batch {batches // batch_size + 1}: {e}")
-            fallback(batch_ids, data, batches // batch_size + 1)
-            CDLQ_processing(batch_ids)
+            state.update_batch(just_complete_batch=batch_number, current_batch=batch_number, failed_id=state.failed_id)
+            try:
+                save_checkpoint(state, filename=FILES['checkpoint'])
+                logging.info(f"Checkpoint saved successfully.")
+            except Exception as e:
+                logging.error(f"Error saving checkpoint: {e}")
+                continue
+            
+        except KeyboardInterrupt:
+            logging.info("KeyboardInterrupt received - saving checkpoint...")
+            state.update_status(current_status="Error")
+            save_checkpoint(state, filename=FILES['checkpoint'])
+            logging.info("Checkpoint saved successfully.")
             break
-
+        except Exception as e:
+            state.update_status(current_status="Error")     
+            save_checkpoint(state, filename=FILES['checkpoint'])
+            logging.error(f"Error processing batch {batch_number}: {e}")
     logging.info(f"Total products collected for this batch: {total_products} / {batch_total}")
 
 if __name__ == "__main__":
     setup_logging()
     product_ids = read_data()
-    product_ids = product_ids[:2000]
+    product_ids = product_ids[:4000]
     get_product_data_wrapper(product_ids)
     logging.info("All batches processed and saved.")
+    clear_checkpoint(filename=FILES['checkpoint'])   
+    logging.info("This job finished. Checkpoint cleared.")
