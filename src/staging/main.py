@@ -1,6 +1,5 @@
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, as_completed
 import json
-import os
 from crawl import read_data, get_product_data, setup_logging
 from processing import preprocessing
 from concurrent.futures import ThreadPoolExecutor
@@ -12,19 +11,20 @@ from pathlib import Path
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
 FILES = {
     'products': BASE_DIR / 'data' / 'input' / 'products-0-200000.xlsx',
-    # 'logs': BASE_DIR / 'logs' / 'crawl.log',
-    'logs': BASE_DIR / 'tests' / 'logs' / 'crawl.log',
     
-    # 'abnormal-id': BASE_DIR / 'logs' / 'DLQ.log',
-    'abnormal-id': BASE_DIR / 'tests' / 'logs' / 'DLQ.log',
+    'logs': BASE_DIR / 'logs' / 'crawl.log',
+    # 'logs': BASE_DIR / 'tests' / 'logs' / 'crawl.log',
     
-    # 'output': BASE_DIR / 'data' / 'output',
-    'output': BASE_DIR / 'tests' / 'output',
+    'abnormal-id': BASE_DIR / 'logs' / 'DLQ.log',
+    # 'abnormal-id': BASE_DIR / 'tests' / 'logs' / 'DLQ.log',
+    
+    'output': BASE_DIR / 'data' / 'output',
+    # 'output': BASE_DIR / 'tests' / 'output'
 
     # 'tmp': BASE_DIR / 'data' / 'output',
     'tmp': BASE_DIR / 'tests' / 'output' / 'tmp',
 
-    'checkpoint' : BASE_DIR / 'tests' / 'checkpoints' / 'checkpoint.json'
+    'checkpoint' : BASE_DIR / 'config' / 'checkpoints' / 'checkpoint.json'
 }
 
 def saving(data, batch_number):
@@ -76,7 +76,8 @@ def get_product_data_wrapper(product_ids):
             with ThreadPoolExecutor(max_workers=20) as executor:
                 for product_id in batch_ids:
                     future.append(executor.submit(get_product_data, product_id))
-            for f in future:
+                    
+            for f in as_completed(future, timeout=900): # Set timeout to avoid infinite retry
                 result = f.result()
                 data.append(result)
                 state.update_status(current_status="processing")
@@ -107,12 +108,17 @@ def get_product_data_wrapper(product_ids):
                 logging.error(f"Error saving checkpoint: {e}")
                 continue
             
-        except KeyboardInterrupt:
-            logging.info("KeyboardInterrupt received - saving checkpoint...")
-            state.update_status(current_status="Error")
+        except TimeoutError:
+            logging.warning(f"Batch {batch_number} timeout")
+            # Save partial data if any
+            if data:
+                saving(data, f"{batch_number}_partial")
+            # Update checkpoint for partial completion
+            state.update_batch(batch_number, batch_number, state.failed_id)
+            state.update_status("timeout")
             save_checkpoint(state, filename=FILES['checkpoint'])
-            logging.info("Checkpoint saved successfully.")
             break
+        
         except Exception as e:
             state.update_status(current_status="Error")     
             save_checkpoint(state, filename=FILES['checkpoint'])
@@ -122,7 +128,6 @@ def get_product_data_wrapper(product_ids):
 if __name__ == "__main__":
     setup_logging()
     product_ids = read_data()
-    product_ids = product_ids[:4000]
     get_product_data_wrapper(product_ids)
     logging.info("All batches processed and saved.")
     clear_checkpoint(filename=FILES['checkpoint'])   

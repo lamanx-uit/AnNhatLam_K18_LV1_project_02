@@ -15,14 +15,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 FILES = {
     'products': BASE_DIR / 'data' / 'input' / 'products-0-200000.xlsx',
     
-    # 'logs': BASE_DIR / 'logs' / 'crawl.log',
-    'logs': BASE_DIR / 'tests' / 'logs' / 'crawl.log',
+    'logs': BASE_DIR / 'logs' / 'crawl.log',
+    # 'logs': BASE_DIR / 'tests' / 'logs' / 'crawl.log',
     
-    # 'abnormal-id': BASE_DIR / 'logs' / 'DLQ.log',
-    'abnormal-id': BASE_DIR / 'tests' / 'logs' / 'DLQ.log',
+    'abnormal-id': BASE_DIR / 'logs' / 'DLQ.log',
+    # 'abnormal-id': BASE_DIR / 'tests' / 'logs' / 'DLQ.log',
     
-    # 'output': BASE_DIR / 'data' / 'output',
-    'output': BASE_DIR / 'tests' / 'output'
+    'output': BASE_DIR / 'data' / 'output',
+    # 'output': BASE_DIR / 'tests' / 'output'
 }
 
 def setup_logging():
@@ -137,7 +137,6 @@ def get_product_data(product_id):
                 time.sleep(random.uniform(1, 3) * (attempt + 1))
             else:
                 last_error = f"Timeout after {max_retries} attempts"
-            raise req.Timeout()
             
         except req.ConnectionError:
             logging.warning(f"Connection error for product ID {product_id}, retrying...")
@@ -145,7 +144,6 @@ def get_product_data(product_id):
                 time.sleep(random.uniform(1, 3) * (attempt + 1))
             else:
                 last_error = f"Connection error after {max_retries} attempts"
-            raise req.ConnectionError()
         
         # Other errors
         except req.RequestException as e:
