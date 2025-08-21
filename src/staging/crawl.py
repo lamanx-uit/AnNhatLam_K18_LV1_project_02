@@ -7,7 +7,6 @@ import random
 import logging
 from pathlib import Path
 import requests
-from circuitbreaker import circuit
 
 # Move to yaml (gotta learn)
 from pathlib import Path
@@ -24,15 +23,6 @@ FILES = {
     'output': BASE_DIR / 'data' / 'output',
     # 'output': BASE_DIR / 'tests' / 'output'
 }
-
-def setup_logging():
-    logging.basicConfig(
-        filename=FILES['logs'],
-        level=logging.INFO,
-        format='%(asctime)s - %(levelname)s: %(message)s',
-        datefmt='%Y-%m-%d %H:%M:%S'
-    )
-    logging.info("Logging setup complete.")
 
 def read_data():
     """Read product IDs, check and improve veracity."""
@@ -89,9 +79,8 @@ def setup_session():
     }
     return session, headers
 
-def get_product_data(product_id):
+def get_product_data(product_id, session, headers):
     max_retries = 3
-    session, headers = setup_session()
     url = f'https://api.tiki.vn/product-detail/api/v1/products/{product_id}'
     logging.info(f"Fetching data for product ID {product_id}")
     last_error = str()
@@ -113,7 +102,7 @@ def get_product_data(product_id):
                     'url_key': data.get('url_key', None),
                     'price': data.get('price', None), 
                     'description': data.get('description', None),
-                    'images_url': data.get('images', None)
+                    'images_url': [img['base_url'] or img['large_url'] or img['medium_url'] for img in data.get('images', []) if img.get('base_url')]
                 }
                 logging.info(f"Fetched data for product ID {product_id}")
                 return selected_data
@@ -157,9 +146,11 @@ def get_product_data(product_id):
     # If all retries fail, to DLQ
     logging.error(f"Failed to fetch data for product ID {product_id} after {max_retries} attempts, {last_error}")
     # Log the error to DLQ logs
-    with open(FILES['abnormal-id'], 'a') as f:
-        f.write(f"{product_id}, {last_error}\n")     
-    return None
+    # with open(FILES['abnormal-id'], 'a') as f:
+    #     f.write(f"{product_id}, {last_error}\n")
+    dlq = logging.getLogger('dlq')
+    dlq.error(f"{product_id}, {last_error}\n")  
+    return {'id': product_id, 'error': last_error}
 
 """TODO:
 - The program can't ensure that the data outcome is the same all the times -> Veracity is really really bad (PASSED)

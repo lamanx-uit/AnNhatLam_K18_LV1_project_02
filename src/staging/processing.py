@@ -5,9 +5,11 @@ from pathlib import Path
 import logging
 
 def preprocessing(data):
-    text = data['description']
-    
+    text = data.get('description', '')
+    data_id = data.get('id', 'unknown')
+
     if text:
+        text = str(text)
         # Remove HTML tags and decode HTML entities
         text = html.unescape(text)
         text = BeautifulSoup(text, 'html.parser').get_text()
@@ -19,5 +21,5 @@ def preprocessing(data):
         text = ""
     
     data['description'] = text
-    logging.info(f"Preprocessed data for {data['id']}")
+    logging.info(f"Preprocessed data for {data_id}")
     return data
