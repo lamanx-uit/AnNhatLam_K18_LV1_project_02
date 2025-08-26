@@ -1,0 +1,18 @@
+{
+  "created_at": "2025-08-21T10:53:24.336657",
+  "last_updated": "2025-08-21T10:53:36.791230",
+  "current_batch": 2,
+  "completed_batch": [
+    1
+  ],
+  "failed_id": [
+    252177965,
+    202719601,
+    253041020,
+    214841295,
+    215162868,
+    154530131
+  ],
+  "current_status": "processed",
+  "total_products": 494
+}

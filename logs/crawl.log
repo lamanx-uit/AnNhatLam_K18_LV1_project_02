@@ -1,0 +1,1556 @@
+2025-08-21 10:59:15 - INFO: Logging setup complete.
+2025-08-21 10:59:16 - INFO: Read input file successfully
+2025-08-21 10:59:16 - INFO: Extracted 200004 product IDs from the input file
+2025-08-21 10:59:16 - INFO: Removed duplicates successfully, 200004 unique product IDs remaining
+2025-08-21 10:59:16 - WARNING: Invalid product ID found: hellocanhaiucuakem (type: <class 'str'>)
+2025-08-21 10:59:16 - INFO: 1 invalid IDs removed
+2025-08-21 10:59:16 - WARNING: Invalid product ID found: 9.19 (type: <class 'float'>)
+2025-08-21 10:59:16 - INFO: 2 invalid IDs removed
+2025-08-21 10:59:16 - WARNING: Invalid product ID found: 11.9 (type: <class 'float'>)
+2025-08-21 10:59:16 - INFO: 3 invalid IDs removed
+2025-08-21 10:59:16 - WARNING: Invalid product ID found: vansire (type: <class 'str'>)
+2025-08-21 10:59:16 - INFO: 4 invalid IDs removed
+2025-08-21 10:59:16 - INFO: Validation complete: 200000 valid IDs
+2025-08-21 10:59:16 - INFO: Invalid IDs written to /home/lamanx/DEC/Lab2/logs/DLQ.log
+2025-08-21 10:59:16 - INFO: checkpoint_data: None
+2025-08-21 10:59:16 - INFO: No checkpoint found - starting fresh
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 1391347
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 74897599
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 154155413
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 253117062
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 130978358
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 214009046
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 171618108
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 179970479
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 139457837
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 197334787
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 214008432
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 213678661
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 138083218
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 75331097
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 139457787
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 146457002
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 178596691
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 191463903
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 167750518
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 170337343
+2025-08-21 10:59:16 - INFO: Fetched data for product ID 74897599
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 58510250
+2025-08-21 10:59:16 - INFO: Fetched data for product ID 139457837
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 214006984
+2025-08-21 10:59:16 - INFO: Fetched data for product ID 1391347
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 75378756
+2025-08-21 10:59:16 - INFO: Fetched data for product ID 139457787
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 215101707
+2025-08-21 10:59:16 - INFO: Fetched data for product ID 179970479
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 184319033
+2025-08-21 10:59:16 - INFO: Fetched data for product ID 167750518
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 205930779
+2025-08-21 10:59:16 - INFO: Fetched data for product ID 213678661
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 152738111
+2025-08-21 10:59:16 - INFO: Fetched data for product ID 253117062
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 103637219
+2025-08-21 10:59:16 - INFO: Fetched data for product ID 178596691
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 67029245
+2025-08-21 10:59:16 - INFO: Fetched data for product ID 171618108
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 154530234
+2025-08-21 10:59:16 - INFO: Fetched data for product ID 170337343
+2025-08-21 10:59:16 - INFO: Fetching data for product ID 157943579
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 130978358
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 168663152
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 138083218
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 184669779
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 154155413
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 160814241
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 184319033
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 225385243
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 191463903
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 36376636
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 197334787
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 140420532
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 103637219
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 206303845
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 75378756
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 138838287
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 214009046
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 74892021
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 157943579
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 164361837
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 154530234
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 179805786
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 146457002
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 213678732
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 184669779
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 174287389
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 214008432
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 75378750
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 168663152
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 213678772
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 225385243
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 176464521
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 75331097
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 178092987
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 140420532
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 143061027
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 206303845
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 225255034
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 58510250
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 79709163
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 138838287
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 216178735
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 74892021
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 158210295
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 214006984
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 156644981
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 179805786
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 164361837
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 214008289
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 855162
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 174287389
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 216382694
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 213678732
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 139457475
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 855162
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 196015143
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 205930779
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 245323425
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 213678772
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 204037726
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 152738111
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 51844790
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 214008289
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 203862292
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 176464521
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 2758623
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 67029245
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 235732186
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 139457475
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 253116803
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 225255034
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 145562720
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 215101707
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 174280494
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 196015143
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 133005345
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 160814241
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 168004956
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 79709163
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 214008668
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 174280494
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 166405895
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 36376636
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 252069617
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 158210295
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 103545051
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 75378750
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 174342096
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 51844790
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 135390778
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 178092987
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 43755849
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 103545051
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 145673600
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 203862292
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 106870100
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 145562720
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 150509493
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 143061027
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 167387981
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 216178735
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 214008360
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 174342096
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 153413535
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 106870100
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 201509082
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 156644981
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 192692807
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 214008360
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 123441327
+2025-08-21 10:59:17 - INFO: Fetched data for product ID 43755849
+2025-08-21 10:59:17 - INFO: Fetching data for product ID 167513137
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 216382694
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 181770298
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 145673600
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 139460205
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 201509082
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 203202280
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 192692807
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 251546916
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 167513137
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 75378593
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 204037726
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 214690892
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 123441327
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 201525471
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 139460205
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 88993037
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 251546916
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 178083976
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 203202280
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 2758623
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 99834160
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 253881297
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 245323425
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 212054460
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 235732186
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 212054372
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 75378593
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 67029322
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 212054460
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 191463934
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 253116803
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 214006896
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 214690892
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 194212256
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 133005345
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 190608158
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 67029322
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 43084631
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 201525471
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 222322077
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 168004956
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 150509465
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 191463934
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 214007120
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 214008668
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 235728525
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 43084631
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 213678621
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 194212256
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 173419596
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 166405895
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 213527833
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 150509465
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 164379838
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 252069617
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 144756298
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 213527833
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 178319679
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 214007120
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 214008786
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 135390778
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 125244519
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 144756298
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 184589216
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 235728525
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 174163144
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 150509493
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 34423196
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 214008786
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 56420137
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 213678621
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 214008201
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 125244519
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 253266713
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 167387981
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 158409197
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 173419596
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 77679596
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 153413535
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 215101775
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 56420137
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 193513488
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 164379838
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 193124408
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 181770298
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 177994992
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 34423196
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 214006797
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 215101775
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 198933052
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 88993037
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 136154121
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 214008201
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 163022779
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 193124408
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 108092449
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 178083976
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 213705539
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 177994992
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 222309908
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 253266713
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 186886481
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 253881297
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 64731425
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 77679596
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 152738106
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 136154121
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 75381117
+2025-08-21 10:59:18 - INFO: Fetched data for product ID 99834160
+2025-08-21 10:59:18 - INFO: Fetching data for product ID 215101820
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 214006797
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 195284121
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 163022779
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 73464882
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 212054372
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 158709609
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 75381117
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 192850997
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 213705539
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 106604822
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 214006896
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 146479789
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 186886481
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 59173682
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 195284121
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 154530205
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 190608158
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 154529527
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 192850997
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 136350432
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 64731425
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 139460159
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 222322077
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 2758335
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 136350432
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 48115056
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 152738106
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 76600311
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 178319679
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 73378458
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 215101820
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 24780272
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 184589216
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 52462077
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 106604822
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 179156244
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 174163144
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 113047674
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 59173682
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 252356385
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 158409197
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 192683653
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 154529527
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 121248640
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 252356385
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 214007708
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 193513488
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 214007535
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 139460159
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 143921372
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 198933052
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 214006547
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 192683653
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 214007670
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 76600311
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 19775670
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 121248640
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 252069974
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 108092449
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 247718784
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 73378458
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 217577518
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 214007535
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 64730476
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 113047674
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 13766282
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 214007708
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 214008464
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 73464882
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 74907796
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 222309908
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 225255048
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 143921372
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 214008168
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 158709609
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 148696419
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 214008464
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 214008271
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 252069974
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 191463839
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 146479789
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 191463893
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 214008271
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 125735532
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 64730476
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 214007259
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 154530205
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 148626090
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 191463839
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 202719601
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 13766282
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 197070050
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 2758335
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 214007196
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 214007259
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 221276744
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 214008168
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 117385260
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 48115056
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 195709473
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 148626090
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 252850501
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 225255048
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 208404109
+2025-08-21 10:59:19 - WARNING: Product ID 202719601 not found
+2025-08-21 10:59:19 - INFO: Fetched data for product ID 24780272
+2025-08-21 10:59:19 - INFO: Fetching data for product ID 165984298
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 148696419
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 247933359
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 52462077
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 208784147
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 221276744
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 191463912
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 191463893
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 55885915
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 179156244
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 186254941
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 208784147
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 125735532
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 121709444
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 78509906
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 214006547
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 50735384
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 197070050
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 8078800
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 214007670
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 212318886
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 214007196
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 192714411
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 19775670
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 252177965
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 212318886
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 134939548
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 165984298
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 204050271
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 247718784
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 155354676
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 247933359
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 214007514
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 217577518
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 156300041
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 204050271
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 68737121
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 191463912
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 74844985
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 74907796
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 150509441
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 155354676
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 205996226
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 55885915
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 134657361
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 156300041
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 117385260
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 164796699
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 208916888
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 186254941
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 214006905
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 195709473
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 167952395
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 78509906
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 214007566
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 150509441
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 214232152
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 252850501
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 140992632
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 134657361
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 49862886
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 208404109
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 208413351
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 164796699
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 193124366
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 192714411
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 153981210
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 50735384
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 186967546
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 121709444
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 173425043
+2025-08-21 10:59:20 - WARNING: Product ID 252177965 not found
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 214232152
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 168230747
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 8078800
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 87960221
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 49862886
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 150376825
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 68737121
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 252354757
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 168230747
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 203944149
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 134939548
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 215101742
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 214007514
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 183930504
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 74844985
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 213678623
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 214006905
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 213678750
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 183930504
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 167359953
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 205996226
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 54876380
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 167952395
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 174258673
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 208916888
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 199124927
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 214007566
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 213678736
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 174258673
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 214008666
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 140992632
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 208264628
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 193124366
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 99834190
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 208413351
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 139461086
+2025-08-21 10:59:20 - INFO: Fetched data for product ID 214008666
+2025-08-21 10:59:20 - INFO: Fetching data for product ID 172936280
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 153981210
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 843695
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 186967546
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 154530131
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 208264628
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 214008675
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 87960221
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 252131553
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 173425043
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 130855255
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 99834190
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 217564392
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 252354757
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 171666530
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 150376825
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 252103741
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 172936280
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 104261356
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 167359953
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 199727753
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 203944149
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 214008675
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 196052014
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 118243361
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 213678736
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 127617839
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 215101742
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 171618083
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 130855255
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 188145788
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 139461086
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 152475834
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 213678623
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 212054436
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 217564392
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 214008862
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 843695
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 174068192
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 213678750
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 199727753
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 214007309
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 147918402
+2025-08-21 10:59:21 - WARNING: Product ID 154530131 not found
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 54876380
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 155314490
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 118243361
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 139457936
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 104261356
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 139053107
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 199124927
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 214007136
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 212054436
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 213672339
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 252131553
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 127220655
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 147918402
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 215162868
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 252103741
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 170337341
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 196052014
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 216010481
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 213672339
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 57665756
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 171666530
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 54472523
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 127617839
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 252069964
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 171618083
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 2758737
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 170337341
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 202421267
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 188145788
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 167858009
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 152475834
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 200970149
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 216010481
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 202450686
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 214008862
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 155265712
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 57665756
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 213678629
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 139457936
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 213678714
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 174068192
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 201292086
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 139053107
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 205040003
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 202421267
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 213705531
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 214007309
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 214008387
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 202450686
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 139457802
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 54472523
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 183896516
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 155314490
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 181910579
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 200970149
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 149573995
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 201292086
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 116118554
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 214007136
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 140148551
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 183896516
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 188656078
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 155265712
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 192986184
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 127220655
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 208413497
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 149573995
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 214841295
+2025-08-21 10:59:21 - INFO: Fetched data for product ID 213705531
+2025-08-21 10:59:21 - INFO: Fetching data for product ID 52289591
+2025-08-21 10:59:21 - WARNING: Product ID 215162868 not found
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 139457802
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 139458720
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 116118554
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 248799588
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 252069964
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 183719033
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 181910579
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 142991120
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 188656078
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 194146920
+2025-08-21 10:59:22 - WARNING: Product ID 214841295 not found
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 2758737
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 150509443
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 192986184
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 213678696
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 167858009
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 246864834
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 139458720
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 214007139
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 52289591
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 213678716
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 213678629
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 212054408
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 248799588
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 139202711
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 150509443
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 167595071
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 183719033
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 150726093
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 213678714
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 214232539
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 213678696
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 189539430
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 205040003
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 201508999
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 142991120
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 148022129
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 213678716
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 248741536
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 214008387
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 182563542
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 150726093
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 54551661
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 194146920
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 139457570
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 140148551
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 191463822
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 214007139
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 155356297
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 189539430
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 203860849
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 208413497
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 214006540
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 139202711
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 148938772
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 246864834
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 23039871
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 201508999
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 158783421
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 167595071
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 252130255
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 248741536
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 214006819
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 212054408
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 214008194
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 182563542
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 162241636
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 139457570
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 35578116
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 54551661
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 62679247
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 191463822
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 214008049
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 214232539
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 151955095
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 214006540
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 68603107
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 148022129
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 184314995
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 155356297
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 213678610
+2025-08-21 10:59:22 - WARNING: Product ID 202719601 not found
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 203860849
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 253867378
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 23039871
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 184284278
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 148938772
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 188844340
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 252130255
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 139462110
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 162241636
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 117570799
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 158783421
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 214007069
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 253867378
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 146447981
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 214006819
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 158389754
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 214008194
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 181423334
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 188844340
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 152100326
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 35578116
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 209257026
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 68603107
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 208260577
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 214008049
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 138833658
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 117570799
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 148698969
+2025-08-21 10:59:22 - WARNING: Product ID 252177965 not found
+2025-08-21 10:59:22 - INFO: Fetched data for product ID 184314995
+2025-08-21 10:59:22 - INFO: Fetching data for product ID 53256949
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 139462110
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 62679247
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 214007679
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 179226799
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 146447981
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 200868045
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 214007069
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 139458946
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 151955095
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 203872103
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 213678610
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 208413380
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 53256949
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 183725687
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 181423334
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 59410596
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 179226799
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 72913355
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 184284278
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 214007106
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 138833658
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 99834180
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 200868045
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 87030386
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 158389754
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 195775702
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 139458946
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 250461090
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 152100326
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 52338722
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 208413380
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 174625382
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 99834180
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 89591425
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 208260577
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 177942319
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 59410596
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 99834150
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 209257026
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 250338769
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 177942319
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 150509381
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 183725687
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 35921775
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 148698969
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 213678631
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 72913355
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 213678734
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 250338769
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 184318147
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 214007679
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 167373688
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 203872103
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 150509485
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 87030386
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 68736658
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 214007106
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 150509449
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 250461090
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 248799730
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 184318147
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 212054444
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 195775702
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 164379824
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 150509449
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 214006893
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 174625382
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 150880890
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 52338722
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 179912730
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 99834150
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 159034489
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 212054444
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 20856534
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 89591425
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 214007114
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 35921775
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 173286273
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 150509381
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 214231494
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 213678631
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 155355923
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 213678734
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 144756294
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 173286273
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 214007749
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 167373688
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 139461598
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 150509485
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 47422932
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 155355923
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 252868819
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 68736658
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 181799629
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 248799730
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 179226404
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 139461598
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 167374798
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 164379824
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 225208484
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 214006893
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 150509433
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 150880890
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 221264409
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 225208484
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 133092790
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 179912730
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 212054360
+2025-08-21 10:59:23 - INFO: Fetched data for product ID 20856534
+2025-08-21 10:59:23 - INFO: Fetching data for product ID 139457454
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 150509433
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 149573999
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 214231494
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 214008016
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 159034489
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 229700880
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 144756294
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 179776464
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 214007114
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 144482818
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 229700880
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 173718207
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 47422932
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 184429752
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 214007749
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 1391361
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 173718207
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 253041020
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 252868819
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 25140597
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 179226404
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 253107164
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 181799629
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 208390656
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 184429752
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 20366405
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 167374798
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 41881443
+2025-08-21 10:59:24 - WARNING: Product ID 154530131 not found
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 221264409
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 140418988
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 20366405
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 46217325
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 212054360
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 100901845
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 133092790
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 191463867
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 139457454
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 199036749
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 208390656
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 113047701
+2025-08-21 10:59:24 - WARNING: Product ID 215162868 not found
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 149573999
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 48110607
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 214008016
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 213678619
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 46217325
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 248932361
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 179776464
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 213678724
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 1391361
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 171618090
+2025-08-21 10:59:24 - WARNING: Product ID 253041020 not found
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 199036749
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 235728954
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 144482818
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 193665986
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 25140597
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 169774145
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 253107164
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 1481125
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 191463867
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 262059064
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 41881443
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 212054438
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 48110607
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 216210108
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 140418988
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 182739320
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 213678619
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 155355804
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 100901845
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 148075259
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 235728954
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 147918683
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 182739320
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 208257303
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 113047701
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 34482975
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 193665986
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 136540050
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 155355804
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 214006486
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 248932361
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 146381260
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 136540050
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 169408811
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 213678724
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 214007871
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 262059064
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 214008228
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 169408811
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 196562199
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 216210108
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 104806750
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 171618090
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 47143913
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 214007871
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 14885441
+2025-08-21 10:59:24 - INFO: Fetched data for product ID 147918683
+2025-08-21 10:59:24 - INFO: Fetching data for product ID 192960848
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 214008228
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 208264969
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 169774145
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 159786708
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 14885441
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 184094104
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 1481125
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 17923768
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 196562199
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 214007574
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 212054438
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 254090497
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 192960848
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 173425092
+2025-08-21 10:59:25 - WARNING: Product ID 214841295 not found
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 104806750
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 214007752
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 208264969
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 249728381
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 47143913
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 253088712
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 148075259
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 167374531
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 173425092
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 58740581
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 159786708
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 181694703
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 214007752
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 219456867
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 208257303
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 212054418
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 184094104
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 182739383
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 249728381
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 134332490
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 254090497
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 143612839
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 214006486
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 180937092
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 212054418
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 156647323
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 253088712
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 155355799
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 146381260
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 217548869
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 134332490
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 133092343
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 34482975
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 199641287
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 181694703
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 110169464
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 143612839
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 8078866
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 17923768
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 25982780
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 182739383
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 49651898
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 180937092
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 19698324
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 214007574
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 105674695
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 155355799
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 48306752
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 167374531
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 180007171
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 8078866
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 179372092
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 217548869
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 214007611
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 49651898
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 133792426
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 58740581
+2025-08-21 10:59:25 - INFO: Fetching data for product ID 115783623
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 110169464
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 19698324
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 219456867
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 180007171
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 105674695
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 156647323
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 133092343
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 48306752
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 133792426
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 199641287
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 214007611
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 25982780
+2025-08-21 10:59:25 - WARNING: Product ID 202719601 not found
+2025-08-21 10:59:25 - ERROR: Failed to fetch data for product ID 202719601 after 3 attempts, 404 after 3 attempts
+2025-08-21 10:59:25 - ERROR: 202719601, 404 after 3 attempts
+
+2025-08-21 10:59:25 - INFO: Fetched data for product ID 179372092
+2025-08-21 10:59:26 - INFO: Fetched data for product ID 115783623
+2025-08-21 10:59:26 - WARNING: Product ID 253041020 not found
+2025-08-21 10:59:26 - WARNING: Product ID 252177965 not found
+2025-08-21 10:59:26 - ERROR: Failed to fetch data for product ID 252177965 after 3 attempts, 404 after 3 attempts
+2025-08-21 10:59:26 - ERROR: 252177965, 404 after 3 attempts
+
+2025-08-21 10:59:28 - WARNING: Product ID 214841295 not found
+2025-08-21 10:59:28 - ERROR: Failed to fetch data for product ID 214841295 after 3 attempts, 404 after 3 attempts
+2025-08-21 10:59:28 - ERROR: 214841295, 404 after 3 attempts
+
+2025-08-21 10:59:28 - WARNING: Product ID 154530131 not found
+2025-08-21 10:59:28 - ERROR: Failed to fetch data for product ID 154530131 after 3 attempts, 404 after 3 attempts
+2025-08-21 10:59:28 - ERROR: 154530131, 404 after 3 attempts
+
+2025-08-21 10:59:29 - WARNING: Product ID 215162868 not found
+2025-08-21 10:59:29 - ERROR: Failed to fetch data for product ID 215162868 after 3 attempts, 404 after 3 attempts
+2025-08-21 10:59:29 - ERROR: 215162868, 404 after 3 attempts
+
+2025-08-21 10:59:31 - WARNING: Product ID 253041020 not found
+2025-08-21 10:59:31 - ERROR: Failed to fetch data for product ID 253041020 after 3 attempts, 404 after 3 attempts
+2025-08-21 10:59:31 - ERROR: 253041020, 404 after 3 attempts
+
+2025-08-21 10:59:31 - INFO: Failed to fetch data for product IDs: [252177965, 215162868, 202719601, 253041020, 154530131, 214841295]
+2025-08-21 10:59:31 - INFO: Adding failed ID: 252177965
+2025-08-21 10:59:31 - INFO: Adding failed ID: 215162868
+2025-08-21 10:59:31 - INFO: Adding failed ID: 202719601
+2025-08-21 10:59:31 - INFO: Adding failed ID: 253041020
+2025-08-21 10:59:31 - INFO: Adding failed ID: 154530131
+2025-08-21 10:59:31 - INFO: Adding failed ID: 214841295
+2025-08-21 10:59:31 - INFO: Total products fetched in this batch: 494 / 1000
+2025-08-21 10:59:31 - INFO: Batch 1 fetched with 494 products.
+2025-08-21 10:59:31 - INFO: Preprocessed data for 178092987
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214007752
+2025-08-21 10:59:31 - INFO: Preprocessed data for 192986184
+2025-08-21 10:59:31 - INFO: Preprocessed data for 134657361
+2025-08-21 10:59:31 - INFO: Preprocessed data for 198933052
+2025-08-21 10:59:31 - INFO: Preprocessed data for 176464521
+2025-08-21 10:59:31 - INFO: Preprocessed data for 173425092
+2025-08-21 10:59:31 - INFO: Preprocessed data for 188656078
+2025-08-21 10:59:31 - INFO: Preprocessed data for 205996226
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214006797
+2025-08-21 10:59:31 - INFO: Preprocessed data for 213678772
+2025-08-21 10:59:31 - INFO: Preprocessed data for 254090497
+2025-08-21 10:59:31 - INFO: Preprocessed data for 140148551
+2025-08-21 10:59:31 - INFO: Preprocessed data for 150509441
+2025-08-21 10:59:31 - INFO: Preprocessed data for 177994992
+2025-08-21 10:59:31 - INFO: Preprocessed data for 75378750
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214007574
+2025-08-21 10:59:31 - INFO: Preprocessed data for 116118554
+2025-08-21 10:59:31 - INFO: Preprocessed data for 74844985
+2025-08-21 10:59:31 - INFO: Preprocessed data for 193124408
+2025-08-21 10:59:31 - INFO: Preprocessed data for 174287389
+2025-08-21 10:59:31 - INFO: Preprocessed data for 154155413
+2025-08-21 10:59:31 - INFO: Preprocessed data for 197334787
+2025-08-21 10:59:31 - INFO: Preprocessed data for 17923768
+2025-08-21 10:59:31 - INFO: Preprocessed data for 149573995
+2025-08-21 10:59:31 - INFO: Preprocessed data for 68737121
+2025-08-21 10:59:31 - INFO: Preprocessed data for 193513488
+2025-08-21 10:59:31 - INFO: Preprocessed data for 213678732
+2025-08-21 10:59:31 - INFO: Preprocessed data for 253117062
+2025-08-21 10:59:31 - INFO: Preprocessed data for 184094104
+2025-08-21 10:59:31 - INFO: Preprocessed data for 181910579
+2025-08-21 10:59:31 - INFO: Preprocessed data for 156300041
+2025-08-21 10:59:31 - INFO: Preprocessed data for 215101775
+2025-08-21 10:59:31 - INFO: Preprocessed data for 179805786
+2025-08-21 10:59:31 - INFO: Preprocessed data for 159786708
+2025-08-21 10:59:31 - INFO: Preprocessed data for 183896516
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214007514
+2025-08-21 10:59:31 - INFO: Preprocessed data for 77679596
+2025-08-21 10:59:31 - INFO: Preprocessed data for 164361837
+2025-08-21 10:59:31 - INFO: Preprocessed data for 208264969
+2025-08-21 10:59:31 - INFO: Preprocessed data for 208413497
+2025-08-21 10:59:31 - INFO: Preprocessed data for 139457802
+2025-08-21 10:59:31 - INFO: Preprocessed data for 155354676
+2025-08-21 10:59:31 - INFO: Preprocessed data for 158409197
+2025-08-21 10:59:31 - INFO: Preprocessed data for 74892021
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214008432
+2025-08-21 10:59:31 - INFO: Preprocessed data for 192960848
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214008387
+2025-08-21 10:59:31 - INFO: Preprocessed data for 204050271
+2025-08-21 10:59:31 - INFO: Preprocessed data for 253266713
+2025-08-21 10:59:31 - INFO: Preprocessed data for 138838287
+2025-08-21 10:59:31 - INFO: Preprocessed data for 14885441
+2025-08-21 10:59:31 - INFO: Preprocessed data for 213705531
+2025-08-21 10:59:31 - INFO: Preprocessed data for 134939548
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214008201
+2025-08-21 10:59:31 - INFO: Preprocessed data for 206303845
+2025-08-21 10:59:31 - INFO: Preprocessed data for 47143913
+2025-08-21 10:59:31 - INFO: Preprocessed data for 205040003
+2025-08-21 10:59:31 - INFO: Preprocessed data for 56420137
+2025-08-21 10:59:31 - INFO: Preprocessed data for 140420532
+2025-08-21 10:59:31 - INFO: Preprocessed data for 104806750
+2025-08-21 10:59:31 - INFO: Preprocessed data for 201292086
+2025-08-21 10:59:31 - INFO: Preprocessed data for 192714411
+2025-08-21 10:59:31 - INFO: Preprocessed data for 34423196
+2025-08-21 10:59:31 - INFO: Preprocessed data for 36376636
+2025-08-21 10:59:31 - INFO: Preprocessed data for 196562199
+2025-08-21 10:59:31 - INFO: Preprocessed data for 213678714
+2025-08-21 10:59:31 - INFO: Preprocessed data for 212318886
+2025-08-21 10:59:31 - INFO: Preprocessed data for 174163144
+2025-08-21 10:59:31 - INFO: Preprocessed data for 225385243
+2025-08-21 10:59:31 - INFO: Preprocessed data for 249728381
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214008228
+2025-08-21 10:59:31 - INFO: Preprocessed data for 213678629
+2025-08-21 10:59:31 - INFO: Preprocessed data for 8078800
+2025-08-21 10:59:31 - INFO: Preprocessed data for 184589216
+2025-08-21 10:59:31 - INFO: Preprocessed data for 160814241
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214007871
+2025-08-21 10:59:31 - INFO: Preprocessed data for 155265712
+2025-08-21 10:59:31 - INFO: Preprocessed data for 50735384
+2025-08-21 10:59:31 - INFO: Preprocessed data for 125244519
+2025-08-21 10:59:31 - INFO: Preprocessed data for 184669779
+2025-08-21 10:59:31 - INFO: Preprocessed data for 169408811
+2025-08-21 10:59:31 - INFO: Preprocessed data for 202450686
+2025-08-21 10:59:31 - INFO: Preprocessed data for 121709444
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214008786
+2025-08-21 10:59:31 - INFO: Preprocessed data for 168663152
+2025-08-21 10:59:31 - INFO: Preprocessed data for 146381260
+2025-08-21 10:59:31 - INFO: Preprocessed data for 200970149
+2025-08-21 10:59:31 - INFO: Preprocessed data for 78509906
+2025-08-21 10:59:31 - INFO: Preprocessed data for 178319679
+2025-08-21 10:59:31 - INFO: Preprocessed data for 157943579
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214006486
+2025-08-21 10:59:31 - INFO: Preprocessed data for 167858009
+2025-08-21 10:59:31 - INFO: Preprocessed data for 186254941
+2025-08-21 10:59:31 - INFO: Preprocessed data for 144756298
+2025-08-21 10:59:31 - INFO: Preprocessed data for 154530234
+2025-08-21 10:59:31 - INFO: Preprocessed data for 136540050
+2025-08-21 10:59:31 - INFO: Preprocessed data for 202421267
+2025-08-21 10:59:31 - INFO: Preprocessed data for 164796699
+2025-08-21 10:59:31 - INFO: Preprocessed data for 130978358
+2025-08-21 10:59:31 - INFO: Preprocessed data for 55885915
+2025-08-21 10:59:31 - INFO: Preprocessed data for 164379838
+2025-08-21 10:59:31 - INFO: Preprocessed data for 67029245
+2025-08-21 10:59:31 - INFO: Preprocessed data for 34482975
+2025-08-21 10:59:31 - INFO: Preprocessed data for 2758737
+2025-08-21 10:59:31 - INFO: Preprocessed data for 191463912
+2025-08-21 10:59:31 - INFO: Preprocessed data for 213527833
+2025-08-21 10:59:31 - INFO: Preprocessed data for 103637219
+2025-08-21 10:59:31 - INFO: Preprocessed data for 208257303
+2025-08-21 10:59:31 - INFO: Preprocessed data for 252069964
+2025-08-21 10:59:31 - INFO: Preprocessed data for 208784147
+2025-08-21 10:59:31 - INFO: Preprocessed data for 173419596
+2025-08-21 10:59:31 - INFO: Preprocessed data for 152738111
+2025-08-21 10:59:31 - INFO: Preprocessed data for 147918683
+2025-08-21 10:59:31 - INFO: Preprocessed data for 54472523
+2025-08-21 10:59:31 - INFO: Preprocessed data for 247933359
+2025-08-21 10:59:31 - INFO: Preprocessed data for 213678621
+2025-08-21 10:59:31 - INFO: Preprocessed data for 205930779
+2025-08-21 10:59:31 - INFO: Preprocessed data for 148075259
+2025-08-21 10:59:31 - INFO: Preprocessed data for 57665756
+2025-08-21 10:59:31 - INFO: Preprocessed data for 165984298
+2025-08-21 10:59:31 - INFO: Preprocessed data for 235728525
+2025-08-21 10:59:31 - INFO: Preprocessed data for 184319033
+2025-08-21 10:59:31 - INFO: Preprocessed data for 155355804
+2025-08-21 10:59:31 - INFO: Preprocessed data for 215101707
+2025-08-21 10:59:31 - INFO: Preprocessed data for 216010481
+2025-08-21 10:59:31 - INFO: Preprocessed data for 208404109
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214007120
+2025-08-21 10:59:31 - INFO: Preprocessed data for 75378756
+2025-08-21 10:59:31 - INFO: Preprocessed data for 182739320
+2025-08-21 10:59:31 - INFO: Preprocessed data for 170337341
+2025-08-21 10:59:31 - INFO: Preprocessed data for 252850501
+2025-08-21 10:59:31 - INFO: Preprocessed data for 150509465
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214006984
+2025-08-21 10:59:31 - INFO: Preprocessed data for 216210108
+2025-08-21 10:59:31 - INFO: Preprocessed data for 195709473
+2025-08-21 10:59:31 - INFO: Preprocessed data for 222322077
+2025-08-21 10:59:31 - INFO: Preprocessed data for 58510250
+2025-08-21 10:59:31 - INFO: Preprocessed data for 212054438
+2025-08-21 10:59:31 - INFO: Preprocessed data for 127220655
+2025-08-21 10:59:31 - INFO: Preprocessed data for 117385260
+2025-08-21 10:59:31 - INFO: Preprocessed data for 43084631
+2025-08-21 10:59:31 - INFO: Preprocessed data for 139457787
+2025-08-21 10:59:31 - INFO: Preprocessed data for 262059064
+2025-08-21 10:59:31 - INFO: Preprocessed data for 213672339
+2025-08-21 10:59:31 - INFO: Preprocessed data for 221276744
+2025-08-21 10:59:31 - INFO: Preprocessed data for 190608158
+2025-08-21 10:59:31 - INFO: Preprocessed data for 1481125
+2025-08-21 10:59:31 - INFO: Preprocessed data for 138083218
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214007136
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214007196
+2025-08-21 10:59:31 - INFO: Preprocessed data for 194212256
+2025-08-21 10:59:31 - INFO: Preprocessed data for 169774145
+2025-08-21 10:59:31 - INFO: Preprocessed data for 139053107
+2025-08-21 10:59:31 - INFO: Preprocessed data for 197070050
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214006896
+2025-08-21 10:59:31 - INFO: Preprocessed data for 193665986
+2025-08-21 10:59:31 - INFO: Preprocessed data for 139457936
+2025-08-21 10:59:31 - INFO: Preprocessed data for 191463934
+2025-08-21 10:59:31 - INFO: Preprocessed data for 235728954
+2025-08-21 10:59:31 - INFO: Preprocessed data for 155314490
+2025-08-21 10:59:31 - INFO: Preprocessed data for 148626090
+2025-08-21 10:59:31 - INFO: Preprocessed data for 67029322
+2025-08-21 10:59:31 - INFO: Preprocessed data for 171618090
+2025-08-21 10:59:31 - INFO: Preprocessed data for 147918402
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214007259
+2025-08-21 10:59:31 - INFO: Preprocessed data for 212054372
+2025-08-21 10:59:31 - INFO: Preprocessed data for 213678724
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214007309
+2025-08-21 10:59:31 - INFO: Preprocessed data for 125735532
+2025-08-21 10:59:31 - INFO: Preprocessed data for 212054460
+2025-08-21 10:59:31 - INFO: Preprocessed data for 248932361
+2025-08-21 10:59:31 - INFO: Preprocessed data for 174068192
+2025-08-21 10:59:31 - INFO: Preprocessed data for 191463893
+2025-08-21 10:59:31 - INFO: Preprocessed data for 253881297
+2025-08-21 10:59:31 - INFO: Preprocessed data for 213678619
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214008862
+2025-08-21 10:59:31 - INFO: Preprocessed data for 191463839
+2025-08-21 10:59:31 - INFO: Preprocessed data for 99834160
+2025-08-21 10:59:31 - INFO: Preprocessed data for 48110607
+2025-08-21 10:59:31 - INFO: Preprocessed data for 212054436
+2025-08-21 10:59:31 - INFO: Preprocessed data for 170337343
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214008271
+2025-08-21 10:59:31 - INFO: Preprocessed data for 178083976
+2025-08-21 10:59:31 - INFO: Preprocessed data for 1391347
+2025-08-21 10:59:31 - INFO: Preprocessed data for 113047701
+2025-08-21 10:59:31 - INFO: Preprocessed data for 152475834
+2025-08-21 10:59:31 - INFO: Preprocessed data for 148696419
+2025-08-21 10:59:31 - INFO: Preprocessed data for 88993037
+2025-08-21 10:59:31 - INFO: Preprocessed data for 199036749
+2025-08-21 10:59:31 - INFO: Preprocessed data for 188145788
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214008168
+2025-08-21 10:59:31 - INFO: Preprocessed data for 201525471
+2025-08-21 10:59:31 - INFO: Preprocessed data for 191463867
+2025-08-21 10:59:31 - INFO: Preprocessed data for 171618083
+2025-08-21 10:59:31 - INFO: Preprocessed data for 225255048
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214690892
+2025-08-21 10:59:31 - INFO: Preprocessed data for 167750518
+2025-08-21 10:59:31 - INFO: Preprocessed data for 100901845
+2025-08-21 10:59:31 - INFO: Preprocessed data for 127617839
+2025-08-21 10:59:31 - INFO: Preprocessed data for 74907796
+2025-08-21 10:59:31 - INFO: Preprocessed data for 75378593
+2025-08-21 10:59:31 - INFO: Preprocessed data for 46217325
+2025-08-21 10:59:31 - INFO: Preprocessed data for 118243361
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214008464
+2025-08-21 10:59:31 - INFO: Preprocessed data for 251546916
+2025-08-21 10:59:31 - INFO: Preprocessed data for 140418988
+2025-08-21 10:59:31 - INFO: Preprocessed data for 196052014
+2025-08-21 10:59:31 - INFO: Preprocessed data for 13766282
+2025-08-21 10:59:31 - INFO: Preprocessed data for 203202280
+2025-08-21 10:59:31 - INFO: Preprocessed data for 41881443
+2025-08-21 10:59:31 - INFO: Preprocessed data for 199727753
+2025-08-21 10:59:31 - INFO: Preprocessed data for 64730476
+2025-08-21 10:59:31 - INFO: Preprocessed data for 139460205
+2025-08-21 10:59:31 - INFO: Preprocessed data for 20366405
+2025-08-21 10:59:31 - INFO: Preprocessed data for 104261356
+2025-08-21 10:59:31 - INFO: Preprocessed data for 217577518
+2025-08-21 10:59:31 - INFO: Preprocessed data for 181770298
+2025-08-21 10:59:31 - INFO: Preprocessed data for 208390656
+2025-08-21 10:59:31 - INFO: Preprocessed data for 252103741
+2025-08-21 10:59:31 - INFO: Preprocessed data for 247718784
+2025-08-21 10:59:31 - INFO: Preprocessed data for 167513137
+2025-08-21 10:59:31 - INFO: Preprocessed data for 253107164
+2025-08-21 10:59:31 - INFO: Preprocessed data for 171666530
+2025-08-21 10:59:31 - INFO: Preprocessed data for 252069974
+2025-08-21 10:59:31 - INFO: Preprocessed data for 123441327
+2025-08-21 10:59:31 - INFO: Preprocessed data for 25140597
+2025-08-21 10:59:31 - INFO: Preprocessed data for 217564392
+2025-08-21 10:59:31 - INFO: Preprocessed data for 19775670
+2025-08-21 10:59:31 - INFO: Preprocessed data for 192692807
+2025-08-21 10:59:31 - INFO: Preprocessed data for 130855255
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214007670
+2025-08-21 10:59:31 - INFO: Preprocessed data for 201509082
+2025-08-21 10:59:31 - INFO: Preprocessed data for 213678661
+2025-08-21 10:59:31 - INFO: Preprocessed data for 1391361
+2025-08-21 10:59:31 - INFO: Preprocessed data for 252131553
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214006547
+2025-08-21 10:59:31 - INFO: Preprocessed data for 153413535
+2025-08-21 10:59:31 - INFO: Preprocessed data for 184429752
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214008675
+2025-08-21 10:59:31 - INFO: Preprocessed data for 143921372
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214008360
+2025-08-21 10:59:31 - INFO: Preprocessed data for 191463903
+2025-08-21 10:59:31 - INFO: Preprocessed data for 173718207
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214007535
+2025-08-21 10:59:31 - INFO: Preprocessed data for 167387981
+2025-08-21 10:59:31 - INFO: Preprocessed data for 144482818
+2025-08-21 10:59:31 - INFO: Preprocessed data for 843695
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214007708
+2025-08-21 10:59:31 - INFO: Preprocessed data for 150509493
+2025-08-21 10:59:31 - INFO: Preprocessed data for 179776464
+2025-08-21 10:59:31 - INFO: Preprocessed data for 172936280
+2025-08-21 10:59:31 - INFO: Preprocessed data for 121248640
+2025-08-21 10:59:31 - INFO: Preprocessed data for 106870100
+2025-08-21 10:59:31 - INFO: Preprocessed data for 229700880
+2025-08-21 10:59:31 - INFO: Preprocessed data for 139461086
+2025-08-21 10:59:31 - INFO: Preprocessed data for 192683653
+2025-08-21 10:59:31 - INFO: Preprocessed data for 145673600
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214008016
+2025-08-21 10:59:31 - INFO: Preprocessed data for 99834190
+2025-08-21 10:59:31 - INFO: Preprocessed data for 252356385
+2025-08-21 10:59:31 - INFO: Preprocessed data for 43755849
+2025-08-21 10:59:31 - INFO: Preprocessed data for 149573999
+2025-08-21 10:59:31 - INFO: Preprocessed data for 208264628
+2025-08-21 10:59:31 - INFO: Preprocessed data for 113047674
+2025-08-21 10:59:31 - INFO: Preprocessed data for 135390778
+2025-08-21 10:59:31 - INFO: Preprocessed data for 115783623
+2025-08-21 10:59:31 - INFO: Preprocessed data for 139457454
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214008666
+2025-08-21 10:59:31 - INFO: Preprocessed data for 179156244
+2025-08-21 10:59:31 - INFO: Preprocessed data for 174342096
+2025-08-21 10:59:31 - INFO: Preprocessed data for 133792426
+2025-08-21 10:59:31 - INFO: Preprocessed data for 212054360
+2025-08-21 10:59:31 - INFO: Preprocessed data for 213678736
+2025-08-21 10:59:31 - INFO: Preprocessed data for 52462077
+2025-08-21 10:59:31 - INFO: Preprocessed data for 103545051
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214007611
+2025-08-21 10:59:31 - INFO: Preprocessed data for 133092790
+2025-08-21 10:59:31 - INFO: Preprocessed data for 199124927
+2025-08-21 10:59:31 - INFO: Preprocessed data for 24780272
+2025-08-21 10:59:31 - INFO: Preprocessed data for 252069617
+2025-08-21 10:59:31 - INFO: Preprocessed data for 179372092
+2025-08-21 10:59:31 - INFO: Preprocessed data for 221264409
+2025-08-21 10:59:31 - INFO: Preprocessed data for 174258673
+2025-08-21 10:59:31 - INFO: Preprocessed data for 73378458
+2025-08-21 10:59:31 - INFO: Preprocessed data for 166405895
+2025-08-21 10:59:31 - INFO: Preprocessed data for 178596691
+2025-08-21 10:59:31 - INFO: Preprocessed data for 180007171
+2025-08-21 10:59:31 - INFO: Preprocessed data for 150509433
+2025-08-21 10:59:31 - INFO: Preprocessed data for 54876380
+2025-08-21 10:59:31 - INFO: Preprocessed data for 76600311
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214008668
+2025-08-21 10:59:31 - INFO: Preprocessed data for 48306752
+2025-08-21 10:59:31 - INFO: Preprocessed data for 225208484
+2025-08-21 10:59:31 - INFO: Preprocessed data for 167359953
+2025-08-21 10:59:31 - INFO: Preprocessed data for 48115056
+2025-08-21 10:59:31 - INFO: Preprocessed data for 168004956
+2025-08-21 10:59:31 - INFO: Preprocessed data for 105674695
+2025-08-21 10:59:31 - INFO: Preprocessed data for 167374798
+2025-08-21 10:59:31 - INFO: Preprocessed data for 213678750
+2025-08-21 10:59:31 - INFO: Preprocessed data for 2758335
+2025-08-21 10:59:31 - INFO: Preprocessed data for 133005345
+2025-08-21 10:59:31 - INFO: Preprocessed data for 19698324
+2025-08-21 10:59:31 - INFO: Preprocessed data for 179226404
+2025-08-21 10:59:31 - INFO: Preprocessed data for 213678623
+2025-08-21 10:59:31 - INFO: Preprocessed data for 139460159
+2025-08-21 10:59:31 - INFO: Preprocessed data for 174280494
+2025-08-21 10:59:31 - INFO: Preprocessed data for 49651898
+2025-08-21 10:59:31 - INFO: Preprocessed data for 181799629
+2025-08-21 10:59:31 - INFO: Preprocessed data for 183930504
+2025-08-21 10:59:31 - INFO: Preprocessed data for 136350432
+2025-08-21 10:59:31 - INFO: Preprocessed data for 145562720
+2025-08-21 10:59:31 - INFO: Preprocessed data for 136154121
+2025-08-21 10:59:31 - INFO: Preprocessed data for 25982780
+2025-08-21 10:59:31 - INFO: Preprocessed data for 252868819
+2025-08-21 10:59:31 - INFO: Preprocessed data for 215101742
+2025-08-21 10:59:31 - INFO: Preprocessed data for 154529527
+2025-08-21 10:59:31 - INFO: Preprocessed data for 253116803
+2025-08-21 10:59:31 - INFO: Preprocessed data for 8078866
+2025-08-21 10:59:31 - INFO: Preprocessed data for 47422932
+2025-08-21 10:59:31 - INFO: Preprocessed data for 203944149
+2025-08-21 10:59:31 - INFO: Preprocessed data for 154530205
+2025-08-21 10:59:31 - INFO: Preprocessed data for 235732186
+2025-08-21 10:59:31 - INFO: Preprocessed data for 110169464
+2025-08-21 10:59:31 - INFO: Preprocessed data for 139461598
+2025-08-21 10:59:31 - INFO: Preprocessed data for 252354757
+2025-08-21 10:59:31 - INFO: Preprocessed data for 59173682
+2025-08-21 10:59:31 - INFO: Preprocessed data for 2758623
+2025-08-21 10:59:31 - INFO: Preprocessed data for 199641287
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214007749
+2025-08-21 10:59:31 - INFO: Preprocessed data for 150376825
+2025-08-21 10:59:31 - INFO: Preprocessed data for 146479789
+2025-08-21 10:59:31 - INFO: Preprocessed data for 203862292
+2025-08-21 10:59:31 - INFO: Preprocessed data for 133092343
+2025-08-21 10:59:31 - INFO: Preprocessed data for 144756294
+2025-08-21 10:59:31 - INFO: Preprocessed data for 87960221
+2025-08-21 10:59:31 - INFO: Preprocessed data for 106604822
+2025-08-21 10:59:31 - INFO: Preprocessed data for 51844790
+2025-08-21 10:59:31 - INFO: Preprocessed data for 217548869
+2025-08-21 10:59:31 - INFO: Preprocessed data for 155355923
+2025-08-21 10:59:31 - INFO: Preprocessed data for 168230747
+2025-08-21 10:59:31 - INFO: Preprocessed data for 192850997
+2025-08-21 10:59:31 - INFO: Preprocessed data for 204037726
+2025-08-21 10:59:31 - INFO: Preprocessed data for 75331097
+2025-08-21 10:59:31 - INFO: Preprocessed data for 179970479
+2025-08-21 10:59:31 - INFO: Preprocessed data for 155355799
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214231494
+2025-08-21 10:59:31 - INFO: Preprocessed data for 173425043
+2025-08-21 10:59:31 - INFO: Preprocessed data for 158709609
+2025-08-21 10:59:31 - INFO: Preprocessed data for 245323425
+2025-08-21 10:59:31 - INFO: Preprocessed data for 156647323
+2025-08-21 10:59:31 - INFO: Preprocessed data for 173286273
+2025-08-21 10:59:31 - INFO: Preprocessed data for 186967546
+2025-08-21 10:59:31 - INFO: Preprocessed data for 73464882
+2025-08-21 10:59:31 - INFO: Preprocessed data for 196015143
+2025-08-21 10:59:31 - INFO: Preprocessed data for 180937092
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214007114
+2025-08-21 10:59:31 - INFO: Preprocessed data for 153981210
+2025-08-21 10:59:31 - INFO: Preprocessed data for 195284121
+2025-08-21 10:59:31 - INFO: Preprocessed data for 139457475
+2025-08-21 10:59:31 - INFO: Preprocessed data for 143612839
+2025-08-21 10:59:31 - INFO: Preprocessed data for 20856534
+2025-08-21 10:59:31 - INFO: Preprocessed data for 193124366
+2025-08-21 10:59:31 - INFO: Preprocessed data for 215101820
+2025-08-21 10:59:31 - INFO: Preprocessed data for 216382694
+2025-08-21 10:59:31 - INFO: Preprocessed data for 139457837
+2025-08-21 10:59:31 - INFO: Preprocessed data for 134332490
+2025-08-21 10:59:31 - INFO: Preprocessed data for 159034489
+2025-08-21 10:59:31 - INFO: Preprocessed data for 74897599
+2025-08-21 10:59:31 - INFO: Preprocessed data for 208413351
+2025-08-21 10:59:31 - INFO: Preprocessed data for 75381117
+2025-08-21 10:59:31 - INFO: Preprocessed data for 855162
+2025-08-21 10:59:31 - INFO: Preprocessed data for 182739383
+2025-08-21 10:59:31 - INFO: Preprocessed data for 179912730
+2025-08-21 10:59:31 - INFO: Preprocessed data for 49862886
+2025-08-21 10:59:31 - INFO: Preprocessed data for 152738106
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214008289
+2025-08-21 10:59:31 - INFO: Preprocessed data for 212054418
+2025-08-21 10:59:31 - INFO: Preprocessed data for 150880890
+2025-08-21 10:59:31 - INFO: Preprocessed data for 140992632
+2025-08-21 10:59:31 - INFO: Preprocessed data for 64731425
+2025-08-21 10:59:31 - INFO: Preprocessed data for 156644981
+2025-08-21 10:59:31 - INFO: Preprocessed data for 219456867
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214006893
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214232152
+2025-08-21 10:59:31 - INFO: Preprocessed data for 186886481
+2025-08-21 10:59:31 - INFO: Preprocessed data for 158210295
+2025-08-21 10:59:31 - INFO: Preprocessed data for 181694703
+2025-08-21 10:59:31 - INFO: Preprocessed data for 164379824
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214007566
+2025-08-21 10:59:31 - INFO: Preprocessed data for 222309908
+2025-08-21 10:59:31 - INFO: Preprocessed data for 216178735
+2025-08-21 10:59:31 - INFO: Preprocessed data for 58740581
+2025-08-21 10:59:31 - INFO: Preprocessed data for 212054444
+2025-08-21 10:59:31 - INFO: Preprocessed data for 167952395
+2025-08-21 10:59:31 - INFO: Preprocessed data for 213705539
+2025-08-21 10:59:31 - INFO: Preprocessed data for 79709163
+2025-08-21 10:59:31 - INFO: Preprocessed data for 167374531
+2025-08-21 10:59:31 - INFO: Preprocessed data for 248799730
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214006905
+2025-08-21 10:59:31 - INFO: Preprocessed data for 108092449
+2025-08-21 10:59:31 - INFO: Preprocessed data for 225255034
+2025-08-21 10:59:31 - INFO: Preprocessed data for 253088712
+2025-08-21 10:59:31 - INFO: Preprocessed data for 150509449
+2025-08-21 10:59:31 - INFO: Preprocessed data for 208916888
+2025-08-21 10:59:31 - INFO: Preprocessed data for 163022779
+2025-08-21 10:59:31 - INFO: Preprocessed data for 143061027
+2025-08-21 10:59:31 - INFO: Preprocessed data for 68736658
+2025-08-21 10:59:31 - INFO: Preprocessed data for 150509485
+2025-08-21 10:59:31 - INFO: Preprocessed data for 167373688
+2025-08-21 10:59:31 - INFO: Preprocessed data for 184318147
+2025-08-21 10:59:31 - INFO: Preprocessed data for 213678734
+2025-08-21 10:59:31 - INFO: Preprocessed data for 213678631
+2025-08-21 10:59:31 - INFO: Preprocessed data for 35921775
+2025-08-21 10:59:31 - INFO: Preprocessed data for 150509381
+2025-08-21 10:59:31 - INFO: Preprocessed data for 250338769
+2025-08-21 10:59:31 - INFO: Preprocessed data for 146457002
+2025-08-21 10:59:31 - INFO: Preprocessed data for 99834150
+2025-08-21 10:59:31 - INFO: Preprocessed data for 177942319
+2025-08-21 10:59:31 - INFO: Preprocessed data for 89591425
+2025-08-21 10:59:31 - INFO: Preprocessed data for 174625382
+2025-08-21 10:59:31 - INFO: Preprocessed data for 52338722
+2025-08-21 10:59:31 - INFO: Preprocessed data for 250461090
+2025-08-21 10:59:31 - INFO: Preprocessed data for 195775702
+2025-08-21 10:59:31 - INFO: Preprocessed data for 87030386
+2025-08-21 10:59:31 - INFO: Preprocessed data for 99834180
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214007106
+2025-08-21 10:59:31 - INFO: Preprocessed data for 72913355
+2025-08-21 10:59:31 - INFO: Preprocessed data for 59410596
+2025-08-21 10:59:31 - INFO: Preprocessed data for 183725687
+2025-08-21 10:59:31 - INFO: Preprocessed data for 208413380
+2025-08-21 10:59:31 - INFO: Preprocessed data for 203872103
+2025-08-21 10:59:31 - INFO: Preprocessed data for 139458946
+2025-08-21 10:59:31 - INFO: Preprocessed data for 200868045
+2025-08-21 10:59:31 - INFO: Preprocessed data for 179226799
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214007679
+2025-08-21 10:59:31 - INFO: Preprocessed data for 53256949
+2025-08-21 10:59:31 - INFO: Preprocessed data for 148698969
+2025-08-21 10:59:31 - INFO: Preprocessed data for 138833658
+2025-08-21 10:59:31 - INFO: Preprocessed data for 171618108
+2025-08-21 10:59:31 - INFO: Preprocessed data for 208260577
+2025-08-21 10:59:31 - INFO: Preprocessed data for 209257026
+2025-08-21 10:59:31 - INFO: Preprocessed data for 152100326
+2025-08-21 10:59:31 - INFO: Preprocessed data for 181423334
+2025-08-21 10:59:31 - INFO: Preprocessed data for 158389754
+2025-08-21 10:59:31 - INFO: Preprocessed data for 146447981
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214007069
+2025-08-21 10:59:31 - INFO: Preprocessed data for 117570799
+2025-08-21 10:59:31 - INFO: Preprocessed data for 139462110
+2025-08-21 10:59:31 - INFO: Preprocessed data for 188844340
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214009046
+2025-08-21 10:59:31 - INFO: Preprocessed data for 184284278
+2025-08-21 10:59:31 - INFO: Preprocessed data for 253867378
+2025-08-21 10:59:31 - INFO: Preprocessed data for 213678610
+2025-08-21 10:59:31 - INFO: Preprocessed data for 184314995
+2025-08-21 10:59:31 - INFO: Preprocessed data for 68603107
+2025-08-21 10:59:31 - INFO: Preprocessed data for 151955095
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214008049
+2025-08-21 10:59:31 - INFO: Preprocessed data for 62679247
+2025-08-21 10:59:31 - INFO: Preprocessed data for 35578116
+2025-08-21 10:59:31 - INFO: Preprocessed data for 162241636
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214008194
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214006819
+2025-08-21 10:59:31 - INFO: Preprocessed data for 252130255
+2025-08-21 10:59:31 - INFO: Preprocessed data for 158783421
+2025-08-21 10:59:31 - INFO: Preprocessed data for 23039871
+2025-08-21 10:59:31 - INFO: Preprocessed data for 148938772
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214006540
+2025-08-21 10:59:31 - INFO: Preprocessed data for 203860849
+2025-08-21 10:59:31 - INFO: Preprocessed data for 155356297
+2025-08-21 10:59:31 - INFO: Preprocessed data for 191463822
+2025-08-21 10:59:31 - INFO: Preprocessed data for 139457570
+2025-08-21 10:59:31 - INFO: Preprocessed data for 54551661
+2025-08-21 10:59:31 - INFO: Preprocessed data for 182563542
+2025-08-21 10:59:31 - INFO: Preprocessed data for 248741536
+2025-08-21 10:59:31 - INFO: Preprocessed data for 148022129
+2025-08-21 10:59:31 - INFO: Preprocessed data for 201508999
+2025-08-21 10:59:31 - INFO: Preprocessed data for 189539430
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214232539
+2025-08-21 10:59:31 - INFO: Preprocessed data for 150726093
+2025-08-21 10:59:31 - INFO: Preprocessed data for 167595071
+2025-08-21 10:59:31 - INFO: Preprocessed data for 139202711
+2025-08-21 10:59:31 - INFO: Preprocessed data for 212054408
+2025-08-21 10:59:31 - INFO: Preprocessed data for 213678716
+2025-08-21 10:59:31 - INFO: Preprocessed data for 214007139
+2025-08-21 10:59:31 - INFO: Preprocessed data for 246864834
+2025-08-21 10:59:31 - INFO: Preprocessed data for 213678696
+2025-08-21 10:59:31 - INFO: Preprocessed data for 150509443
+2025-08-21 10:59:31 - INFO: Preprocessed data for 194146920
+2025-08-21 10:59:31 - INFO: Preprocessed data for 142991120
+2025-08-21 10:59:31 - INFO: Preprocessed data for 183719033
+2025-08-21 10:59:31 - INFO: Preprocessed data for 248799588
+2025-08-21 10:59:31 - INFO: Preprocessed data for 139458720
+2025-08-21 10:59:31 - INFO: Preprocessed data for 52289591
+2025-08-21 10:59:31 - INFO: Saved batch 1 to /home/lamanx/DEC/Lab2/data/output/batch_1.json
+2025-08-21 10:59:31 - INFO: Batch 1 processed and saved.
+2025-08-21 10:59:31 - INFO: Checkpoint saved successfully.
+2025-08-21 10:59:31 - INFO: Total products collected for this batch: 494 / 500
+2025-08-21 10:59:31 - INFO: All batches processed and saved.
+2025-08-21 10:59:31 - INFO: Checkpoint archived to /home/lamanx/DEC/Lab2/config/checkpoints/archive/checkpoint_20250821_105931.json
+2025-08-21 10:59:31 - INFO: This job finished. Checkpoint archived.
