@@ -149,7 +149,6 @@ def get_product_data_wrapper(product_ids, session, headers):
             state.update_status("timeout")
             save_checkpoint(state, filename=FILES['checkpoint'])
             break
-        
         except Exception as e:
             state.update_status(current_status="Error")     
             save_checkpoint(state, filename=FILES['checkpoint'])

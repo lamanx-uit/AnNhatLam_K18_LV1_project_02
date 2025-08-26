@@ -102,10 +102,10 @@ def load_checkpoint(filename):
 def archive_checkpoint(filename):
     if os.path.exists(filename):
         archive_dir = os.path.join(os.path.dirname(filename), "archive")
-        os.makedirs(archive_dir, exist_ok=True)
+        os.makedirs(archive_dir, exist_ok=True) # if not exist -> create
         
         # Create timestamp-based filename to avoid collisions
-        timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S") # create_datetime
+        timestamp = datetime.datetime.now().strftime("%Y%m%d _ %H%M%S") # create_datetime
         base_name = os.path.splitext(os.path.basename(filename))[0] # File name without extension (without .json)
         archive_filename = f"{base_name}_{timestamp}.json"
         archive_path = os.path.join(archive_dir, archive_filename)
