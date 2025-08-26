@@ -157,7 +157,7 @@ def get_product_data_wrapper(product_ids, session, headers):
 
 if __name__ == "__main__":
     setup_logging()
-    product_ids = read_data()
+    product_ids = read_data()[:2000]
     session, headers = setup_session()
     get_product_data_wrapper(product_ids, session, headers)
     logging.info("All batches processed and saved.")
