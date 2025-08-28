@@ -5,6 +5,7 @@ from processing import preprocessing
 from concurrent.futures import ThreadPoolExecutor
 import logging
 from checkpoint import stateMachine, save_checkpoint, load_checkpoint as load_checkpoint_file, archive_checkpoint
+from db_processing import process_db_main
 
 # Move to yaml (gotta learn)
 from pathlib import Path
@@ -163,3 +164,6 @@ if __name__ == "__main__":
     logging.info("All batches processed and saved.")
     archive_checkpoint(filename=FILES['checkpoint'])
     logging.info("This job finished. Checkpoint archived.")
+    
+    # DB processing, checkpoint will be updated later
+    process_db_main(FILES['output'])

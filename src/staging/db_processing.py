@@ -4,6 +4,27 @@ from pathlib import Path
 import psycopg2
 from configparser import ConfigParser
 
+from pathlib import Path
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+FILES = {
+    'products': BASE_DIR / 'data' / 'input' / 'products-0-200000.xlsx',
+    
+    'logs': BASE_DIR / 'logs' / 'crawl.log',
+    # 'logs': BASE_DIR / 'tests' / 'logs' / 'crawl.log',
+    
+    'abnormal-id': BASE_DIR / 'logs' / 'DLQ.log',
+    # 'abnormal-id': BASE_DIR / 'tests' / 'logs' / 'DLQ.log',
+    
+    'output': BASE_DIR / 'data' / 'output',
+    # 'output': BASE_DIR / 'tests' / 'output'
+
+    # 'tmp': BASE_DIR / 'data' / 'output',
+    'tmp': BASE_DIR / 'tests' / 'output' / 'tmp',
+
+    'checkpoint' : BASE_DIR / 'config' / 'checkpoints' / 'checkpoint.json',
+    'archive' : BASE_DIR / 'config' / 'checkpoints' / 'archive'
+}
+
 def load_config(filename='database.ini', section='postgresql'):
     parser = ConfigParser()
     parser.read(filename)
@@ -140,13 +161,13 @@ def import_images(data, conn):
     finally:
         return result
 
-def process_db_main():
+def process_db_main(data_file):
     conn = connect(load_config())
 
     retry_attempts = 3
 
     for i in range(1, 3):
-        data_file = f'batch_{i}.json'
+        data_file = f'/batch_{i}.json'
             
         data = get_data(data_file)
 
