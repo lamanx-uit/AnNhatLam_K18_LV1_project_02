@@ -7,3 +7,4 @@ src/dev/rds-connect.ipynb
 *.pyc
 CLAUDE.md
 src/dev/getdata.ipynb
+src/dev/database.ini
